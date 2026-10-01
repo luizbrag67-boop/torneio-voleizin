@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio de Vôlei de Praia - Saco do Belém</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b2545; /* Fundo escuro atrás do site para combinar */
+            color: white;
+        }
+        /* Header usando a sua imagem fundo.jpg */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('fundo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        header h1 { margin: 0; font-size: 2.5em; text-shadow: 3px 3px 6px rgba(0,0,0,0.9); }
+        header p { margin: 10px 0 0; font-size: 1.3em; color: #ffd166; text-shadow: 2px 2px 4px rgba(0,0,0,0.9); font-weight: bold; }
+        
+        /* BLOCO CENTRAL: A imagem conteudo.jpg aparece 100% nítida */
+        .container {
+            max-width: 800px;
+            margin: -30px auto 30px;
+            padding: 25px;
+            background: url('conteudo.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Estilo da sua imagem da bola (bola.jpg) */
+        .featured-image {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        /* Títulos com sombra forte para aparecerem por cima da foto de fundo */
+        h2 { 
+            color: #ffd166; /* Amarelo ouro para destacar */
+            border-bottom: 3px solid #ffd166; 
+            padding-bottom: 5px; 
+            margin-top: 25px;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.9);
+            font-size: 1.6em;
+        }
+        
+        /* Parágrafo fora da caixa também com sombra */
+        .container > p {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+        
+        /* CAIXA DE DETALHES: Adicionada a película branca (rgba 255, 255, 255, 0.85) sobre a imagem caixa.jpg */
+        .info-box {
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                        url('caixa.jpg');
+            background-size: cover;
+            background-position: center;
+            border-left: 6px solid #0284c7; /* Linha azul destacada */
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        /* Texto escuro para dar leitura perfeita sobre a película branca */
+        .info-box p { 
+            margin: 12px 0; 
+            font-size: 1.15em; 
+            color: #111;
+            font-weight: bold;
+            text-shadow: none; /* Remove a sombra escura para o texto ficar limpo */
+        }
+        
+        .form-container {
+            position: relative;
+            padding-bottom: 130%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            background: white; /* Mantém o fundo do formulário branco para fácil leitura */
+        }
+        .form-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+            color: #aaa;
+            background-color: #0b2545;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏆I Torneio de Vôlei de Praia SDB🏐</h1>
+        <p>Garanta a vaga da sua dupla e caia na arena!</p>
+    </header>
+
+    <div class="container">
+        <!-- Sua imagem baixada chamada bola.jpg -->
+        <img class="featured-image" src="bola.jpg" alt="Vôlei de Praia">
+
+        <h2>🏐 Detalhes do Torneio</h2>
+        <div class="info-box">
+            <p>🗓️ Grande Dia: Sábado, 24 de Outubro</p>
+            <p>📍 Arena: Praça do Saco do Belém</p>
+            <p>🏐 Categorias: Masculino e Feminino</p>
+            <p>💰 Inscrição: R$ 50,00 por dupla</p>
+        </div>
+
+        <h2>📝 Faça sua Inscrição Aqui</h2>
+        <p>Preencha os dados da sua dupla abaixo para confirmar sua participação no torneio:</p>
+        
+        <div class="form-container">
+            <iframe src="https://forms.gle/zi9Tyuhzno3wQ7ja6">Carregando…</iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Torneio de Vôlei de Praia - Praça do Saco do Belém.</p>
+    </footer>
+
+</body>
+</html>
